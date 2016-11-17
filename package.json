@@ -4,7 +4,7 @@
   "description": "JSON containing all webpack loaders",
   "main": "index.js",
   "scripts": {
-    "lint": "xo"
+    "test": "echo \"No tests in thug valley!\""
   },
   "keywords": [
     "webpack",
