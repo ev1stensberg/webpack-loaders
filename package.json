@@ -1,0 +1,16 @@
+{
+  "name": "webpack-loaders",
+  "version": "1.0.0",
+  "description": "JSON containing all webpack loaders",
+  "main": "index.js",
+  "scripts": {
+    "lint": "xo"
+  },
+  "keywords": [
+    "webpack",
+    "loaders",
+    "json"
+  ],
+  "author": "Even Stensberg<evenstensberg@gmail.com>",
+  "license": "MIT"
+}

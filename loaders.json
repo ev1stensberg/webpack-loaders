@@ -1,0 +1,649 @@
+{
+	"basic": {
+    "json-loader": {
+      "description": "Loads file as json"
+    },
+    "hson-loader": {
+      "description": "Loads HSON file (JSON for Humans), as JSON object"
+    },
+    "raw-loader": {
+      "description": "Loads raw content of a file (as utf8)"
+    },
+    "val-loader": {
+      "description": "Executes code as module and consider exports as JavaScript code"
+    },
+    "to-string-loader": {
+      "description": "Executes code as a module, cast output to a string and exports it"
+    },
+    "imports-loader": {
+      "description": "Imports stuff to the module"
+    },
+    "exports-loader": {
+      "description": "Exports stuff from the module"
+    },
+    "expose-loader": {
+      "description": "Expose exports from a module to the global context"
+    },
+    "script-loader": {
+      "description": "Executes a JavaScript file once in global context (like in script tag), requires are not parsed"
+    },
+    "apply-loader": {
+      "description": "Executes an exported JavaScript function, optionally with arguments, and exports its return value"
+    },
+    "callback-loader": {
+      "description": "Parses your JS, calls specified functions (which you implement in webpack context) and replaces them with the results"
+    },
+    "if-loader": {
+      "description": "This is a preprocesser for the webpack module bundler. It support the if directive,similar to C #ifdef"
+    },
+    "ifdef-loader": {
+      "description": "Preprocessor for .js/.ts files that allows conditional compilation via // #if and // #endif, while preserving sourcemaps."
+    },
+    "source-map-loader": {
+      "description": "Extract sourceMappingURL comments from modules and offer it to webpack"
+    },
+    "checksum-loader": {
+      "description": "Computes the checksum of a file"
+    },
+    "null-loader": {
+      "description": "Emits an empty module."
+    },
+    "substitute-loader": {
+      "description": "Emits a module whose content is substituted (default: null, custom as parameter)"
+    },
+    "cosway-loader": {
+      "description": "Emits a module with a cowsay header"
+    },
+    "dsv-loader": {
+      "description": "Loads csv/tsv files"
+    },
+    "glsl-loader": {
+      "description": "Loads glsl files and support glsl-chunks"
+    },
+    "glsl-template-loader": {
+      "description": "Loads glsl shader files. Support #include directive and template variables"
+    },
+    "render-placement-loader": {
+      "description": "Adds React.render to your component for you (not very practical in most cases)"
+    },
+    "xml-loader": {
+      "description": "Loads XML as JSON"
+    },
+    "svg-react-loader": {
+      "description": "Loads SVG files as JSX-ified React.createClass declarations"
+    },
+    "svg-url-loader": {
+      "description": "Loads SVG file as utf-8 encoded data:URI string"
+    },
+    "svg-as-symbol-loader": {
+      "description": "Wraps content of root element of source SVG file inside symbol element and returns resulting markup"
+    },
+    "base-64-loader": {
+      "description": "Loads file content as base64 string"
+    },
+    "base-64-inline-loader": {
+      "description": "Loader supports the most popular file extensions and can be injected directly into a file as base64 string"
+    },
+    "ng-annotate-loader": {
+      "description": "A loader to annotate dependency injections in Angular.js applications"
+    },
+    "node-loader": {
+      "description": "Loads .node files that are produced using node-gyp"
+    },
+    "required-loader": {
+      "description": "Require a whole directory of trees in bulk. Require JS, Import CSS and imports stuff in it"
+    },
+    "icons-loader": {
+      "description": "Generates iconfont from .svg files (uses gulp-iconfont)"
+    },
+    "markup-inline-loader": {
+      "description": "Inline SVGs to HTML. It’s very useful when applying icon font or applying CSS animation to SVG"
+    },
+    "block-loader": {
+      "description": "Generic loader for rewriting only parts of files, based on content start/end delimiters"
+    },
+    "bundler-configuration-loader": {
+      "description": "Bundler configuration loader, a tool to include bundler configuration in the resulting build"
+    },
+    "console-loader": {
+      "description": "Prints the resolved require of webpack to the console"
+    },
+    "solc-loader": {
+      "description": "Compiles Solidity code (.sol) and returns JavaScript objects with Application Binary Interface (ABI) and bytecode ready for deployment to Ethereum"
+    },
+    "web3-loader": {
+      "description": "Deploys Ethereum VM bytecode and returns ready-to-use JS instances of deployed smart contracts. Also returns initialized Web3 object"
+    },
+    "includes-loader": {
+      "description": "Loads any text file and support nested includes"
+    },
+    "combine-loader": {
+      "description": "Combines results from multiple loaders into one object"
+    },
+    "regexp-replace-loader": {
+      "description": "Replaces RegExp matches with a string"
+    },
+    "icon-maker-loader": {
+      "description": "Loads SVG and bundle it to font and css, returns the class string to use that icon"
+    }
+  },
+  "packaging": {
+    "file-loader": {
+      "description": "Emits the file into the output folder and returns the (relative) url"
+    },
+    "url-loader": {
+      "description": "The url loader works like the file loader, but can return a Data Url if the file is smaller than a limit"
+    },
+    "extract-loader": {
+      "description": "Prepares HTML and CSS modules to be extracted into a separate file (lean alternative to the ExtractTextWebpackPlugin)"
+    },
+    "worker-loader": {
+      "description": "The worker loader creates a WebWorker for the provided file. The bundling of dependencies of the Worker is transparent"
+    },
+    "shared-worker-loader": {
+      "description": "Like the worker loader, but for Shared Workers"
+    },
+    "serviceworker-loader": {
+      "description": "Like the worker loader, but designed for Service Workers"
+    },
+    "bundle-loader": {
+      "description": "Wraps request in a require.ensure block (callback)"
+    },
+    "promise-loader": {
+      "description": "Wraps request in a require.ensure block (promise)"
+    },
+    "async-module-loader": {
+      "description": "Same as bundle, but provides a way to handle script loading errors. Wraps request in a require.ensure block (callback, errback)"
+    },
+    "react-proxy-loader": {
+      "description": "Code Splitting for react components"
+    },
+    "react-hot-loader": {
+      "description": "Allows to live-edit React components while keeping them mounted and preserving their state"
+    },
+    "image-loader": {
+      "description": "Compresses your images. Ideal to use together with file or url"
+    },
+    "img-loader": {
+      "description": "Load and compress images with imagemin"
+    },
+    "image-maxsize-loader": {
+      "description": "Resizes images to fit maximum width/height dimensions while retaining their aspect ratio"
+    },
+    "base64-image-loader": {
+      "description": "Load image as base64 string src"
+    },
+    "imgin-loader": {
+      "description": "Generate placeholder images with different size, colors, text and font size"
+    },
+    "responsive-loader": {
+      "description": "Create multiple resized images for use with srcset and CSS media queries"
+    },
+    "svgo-loader": {
+      "description": "Compresses SVG images using svgo library"
+    },
+    "svg-sprite-loader": {
+      "description": "Like style-loader but for SVG: it creates a single SVG sprite from a set of images, appends it to DOM and returns relative symbol url to be used with svg’s <use>"
+    },
+    "svg-fill-loader": {
+      "description": "Changes colors in SVG images. Useful when you embed SVG in CSS as background image and don’t want to produce tons of identical files which only differ in their fill attributes"
+    },
+    "line-art-loader": {
+      "description": "Inlines SVG files, converting all of its nodes to paths. Useful for line art animations in React components"
+    },
+    "baggage-loader": {
+      "description": "Automatically require any resources related to the required one"
+    },
+    "polymer-loader": {
+      "description": "Process HTML & CSS with preprocessor of choice and require() Web Components like first-class modules"
+    },
+    "uglify-loader": {
+      "description": "Uglify contents of a module. Unlike uglify plugin you can minify with mangling only your application files and not the libraries"
+    },
+    "html-minify-loader": {
+      "description": "Minifies HTML using minimize"
+    },
+    "vue-loader": {
+      "description": "Load single-file Vue.js components as modules, with loader-support for preprocessors"
+    },
+    "tojson-loader": {
+      "description": "Serialize module exports as JSON. Cache generated static data as JSON at build time"
+    },
+    "zip-it-loader": {
+      "description": "Convert files and directories to zip. Great with file"
+    },
+    "lzstring-loader": {
+      "description": "Compresses large strings inline using lz-string, and decompresses them at runtime"
+    },
+    "modernizr-loader": {
+      "description": "Get your modernizr build bundled with webpack"
+    },
+    "s3-loader": {
+      "description": "Pull assets from s3 based on filename, path, and desired environment"
+    },
+    "path-replace-loader": {
+      "description": "Replaces a given base path with another path for dynamic module loading"
+    },
+    "react-intl-loader": {
+      "description": "Loads react-intl locale data via require.ensure"
+    },
+    "font-subset-loader": {
+      "description": "Loads a transformed font resource that contains only a specified subset of glyphs with all other glyphs stripped out"
+    },
+    "w3c-manifest-loader": {
+      "description": "Loads a WebApp manifest.json file"
+    },
+    "web-app-manifest-loader": {
+      "description": "Load images referenced in the icons and splash_screens fields in a Web App Manifest"
+    },
+    "manifest-scope-loader": {
+      "description": "Sets the scope of a web app manifest to the public path"
+    },
+    "less-vars-loader": {
+      "description": "Extracts variables from a given less file and returns it as JSON"
+    },
+    "await-loader": {
+      "description": "Like promise-loader, but simpler. Wraps request in a require.ensure block (promise)"
+    }
+  },
+  "dialects": {
+    "coffee-loader": {
+      "description": "Loads coffee-script like JavaScript"
+    },
+    "coffee-jsx-loader": {
+      "description": "Loads coffee-script with JSX like JavaScript"
+    },
+    "coffee-redux-loader": {
+      "description": "Loads coffee-script like JavaScript"
+    },
+    "json5-loader": {
+      "description": "Like json, but not so strict"
+    },
+    "es6-loader": {
+      "description": "Loads ES6 modules.(old)"
+    },
+    "esnext-loader": {
+      "description": "Transpile ES6 code using esnext"
+    },
+    "babel-loader": {
+      "description": "Turn ES6 code into vanilla ES5 using Babel"
+    },
+    "regenerator-loader": {
+      "description": "Use ES6 generators via Facebook’s Regenerator module"
+    },
+    "livescript-loader": {
+      "description": "Loads LiveScript like JavaScript"
+    },
+    "sweetjs-loader": {
+      "description": "Use sweetjs macros"
+    },
+    "traceur-loader": {
+      "description": "Use future JavaScript features with Traceur"
+    },
+    "ts-loader": {
+      "description": "Loads TypeScript like JavaScript"
+    },
+    "typescript-loader": {
+      "description": "Loads TypeScript like JavaScript"
+    },
+    "awesome-typescript-loader": {
+      "description": "Loads TypeScript like JavaScript with watching support. Works with TypeScript 1.5-alfa"
+    },
+    "webpack-typescript-loader": {
+      "description": "Loads TypeScript like JavaScript. Supports watch mode and source maps. Works with TypeScript 1.5, 1.6, and nightly builds of TypeScript 1.7 and 1.8"
+    },
+    "purs-loader": {
+      "description": "Loads PureScript like JavaScript"
+    },
+    "oj-loader": {
+      "description": "Loads OJ (an Objective-C like language) files and compiles them to plain JavaScript"
+    },
+    "elm-webpack-loader": {
+      "description": "Loads Elm files and compiles them to plain JavaScript"
+    },
+    "miel-loader": {
+      "description": "Loads Miel syntax and compiles to JavaScript"
+    },
+    "wisp-loader": {
+      "description": "Loads Wisp modules and compiles them to JavaScript"
+    },
+    "sibilant-loader": {
+      "description": "Loads Sibilant files and compiles them to JavaScript"
+    },
+    "ion-loader": {
+      "description": "Loads ion files and compiles them to JavaScript"
+    },
+    "json-files-merge-loader": {
+      "description": "Loads and merges JSON files for inclusion in bundles (useful JSON-based i18n/config merging)"
+    }
+  },
+  "templating": {
+    "html-loader": {
+      "description": "Exports HTML as string, require references to static resources"
+    },
+    "dom-loader": {
+      "description": "Exports HTML in a DOM element container"
+    },
+    "riot-loader": {
+      "description": "Loads RiotJS tags and convert them to javascript"
+    },
+    "pug-loader": {
+      "description": "Loads Pug/Jade template and returns a function"
+    },
+    "jade-html-loader": {
+      "description": "Loads Jade template and returns generated HTML"
+    },
+    "jade-react-loader": {
+      "description": "Uses Jade templates for React rendering instead of JSX"
+    },
+    "virtual-jade-loader": {
+      "description": "Uses Jade templates to produce virtual-dom hyperscript output"
+    },
+    "template-html-loader": {
+      "description": "Loads any template with consolidate.js and returns generated HTML"
+    },
+    "handlebars-loader": {
+      "description": "Loads handlebars template and returns a function"
+    },
+    "handlebars-template-loader": {
+      "description": "Loads handlebars template and returns a function (alternative)"
+    },
+    "dust-loader": {
+      "description": "Loads dust template and returns a function"
+    },
+    "ractive-loader": {
+      "description": "Pre-compiles Ractive templates for interactive DOM manipulation"
+    },
+    "jsx-loader": {
+      "description": "Transform jsx code for React to js code"
+    },
+    "react-templates-loader": {
+      "description": "Loads react-template and returns a function"
+    },
+    "em-loader": {
+      "description": "Compiles Emblem to Handlebars.js"
+    },
+    "ejs-loader": {
+      "description": "Loads EJS (underscore( templating engine) template and returns a pre-compiled function"
+    },
+    "ejs-html-loader": {
+      "description": "Loads EJS templates and returns generated HTML"
+    },
+    "mustache-loader": {
+      "description": "Pre-compiles Mustache templates with Hogan.js and returns a function"
+    },
+    "yaml-loader": {
+      "description": "Converts YAML to JSON"
+    },
+    "yml-loader": {
+      "description": "Converts YAML to JavaScript object, optionally omitting blacklisted keys"
+    },
+    "react-markdown-loader": {
+      "description": "Compiles Markdown to a React Component using the markdown-parse parser"
+    },
+    "front-matter-loader": {
+      "description": "Extracts YAML frontmatter"
+    },
+    "markdown-loader": {
+      "description": "Compiles Markdown to HTML"
+    },
+    "rails-erb-loader": {
+      "description": "Compiles ERB files using Ruby on Rails"
+    },
+    "remarkable-loader": {
+      "description": "Compiles Markdown to HTML using the Remarkable parser"
+    },
+    "markdown-it-loader": {
+      "description": "Compiles Markdown to HTML using the markdown-it parser"
+    },
+    "markdownattrs-loader": {
+      "description": "Compiles Markdown to HTML using the markdown-it-attrs parser that allows you to set classes, identifiers and attributes to your markdown"
+    },
+    "ng-cache-loader": {
+      "description": "Puts HTML partials in the Angular’s $templateCache"
+    },
+    "ngtemplate-loader": {
+      "description": "Bundles your AngularJS templates and Pre-loads the template cache"
+    },
+    "hamlc-loader": {
+      "description": "Compiles haml-coffee templates (.hamlc) and returns a function"
+    },
+    "haml-loader": {
+      "description": "Renders haml-coffee templates (.html.hamlc) and returns a string"
+    },
+    "jinja-loader": {
+      "description": "Precompiles nunjucks and jinja2 templates"
+    },
+    "nunjucks-loader": {
+      "description": "Precompiles nunjucks templates"
+    },
+    "soy-loader": {
+      "description": "Compiles Google Closure templates and returns the namespace with render functions"
+    },
+    "smarty-loader": {
+      "description": "Pre-compiles php smarty templates and returns a function"
+    },
+    "swagger-loader": {
+      "description": "Compiles Swagger/OpenAPI JSON and YAML specifications"
+    },
+    "template-string-loader": {
+      "description": "Use ES6 template strings for html templates"
+    },
+    "ect-loader": {
+      "description": "Compile ectjs templates"
+    },
+    "tmodjs-loader": {
+      "description": "Load art-template , a template-engine that is widely used in China"
+    },
+    "layout-loader": {
+      "description": "You can use require directly in html now!"
+    },
+    "swig-loader": {
+      "description": "Webpack Swig loader"
+    },
+    "twig-loader": {
+      "description": "Webpack Twig.js loader"
+    },
+    "mjml-with-images-loader": {
+      "description": "Compiles MJML files with images to responsive email HTML"
+    }
+  },
+  "styling": {
+    "bootstrap-webpack-loader": {
+      "description": "Loads a configuration file for Twitter Bootstrap integration using Less. Allows complete customisation via Less"
+    },
+    "font-awesome-webpack-loader": {
+      "description": "Loads a configuration file for Font Awesome integration using Less. Allows complete customisation via Less"
+    },
+    "bootstrap-sass-loader": {
+      "description": "Deprecated. See bootstrap"
+    },
+    "font-awesome-loader": {
+      "description": "Easy integration of font-awesome with customization via Sass"
+    },
+    "style-loader": {
+      "description": "Add exports of a module as style to DOM"
+    },
+    "isomorphic-style-loader": {
+      "description": "Ad-hoc replacement to style-loader adding support of isomorphic apps and critical path CSS"
+    },
+    "css-loader": {
+      "description": "Loads css file with resolved imports and returns css code"
+    },
+    "cess-loader": {
+      "description": "Loads and compile cess file (css in es6 js) to css"
+    },
+    "less-loader": {
+      "description": "Loads and compiles a less file"
+    },
+    "sass-loader": {
+      "description": "Loads and compiles a scss file"
+    },
+    "stylus-loader": {
+      "description": "Loads and compiles a stylus file"
+    },
+    "csso-loader": {
+      "description": "Minifies input CSS with CSSO"
+    },
+    "rework-loader": {
+      "description": "Post-process CSS with Rework and returns CSS code"
+    },
+    "postcss-loader": {
+      "description": "Post-process CSS with Autoprefixer and other PostCSS plugins"
+    },
+    "autoprefixer-loader": {
+      "description": "Add vendor prefixes to CSS rules using values from Can I Use"
+    },
+    "namespace-css-loader": {
+      "description": "Namespaces your css with a given selector (for encapsulating all rules in one subset of your site)"
+    },
+    "fontgen-loader": {
+      "description": "Create your own webfont with proper CSS on-the-fly and include it into Webpack"
+    },
+    "classnames-loader": {
+      "description": "Automatically bind css-modules to classnames"
+    },
+    "theo-loader": {
+      "description": "Loads Design Tokens files transformed by theo"
+    },
+    "bulma-loader": {
+      "description": "Customize Bulma in your css-modules"
+    },
+    "css-to-string-loader": {
+      "description": "Convert the output of the css-loader back to a string"
+    }
+  },
+  "translation": {
+    "po-loader": {
+      "description": "Loads a PO gettext file and returns JSON"
+    },
+    "po2mo-loader": {
+      "description": "Compiles gettext PO files to MO files"
+    },
+    "format-message-loader": {
+      "description": "Compiles translations to ICU Message Format strings in formatMessage calls"
+    },
+    "jsxlate-loader": {
+      "description": "Transform React source code for use with jsxlate"
+    },
+    "angular-gettext-loader": {
+      "description": "Compiles .po files as Angular.js module or json to be used with angular-gettext"
+    },
+    "webpack-angular-translate-loader": {
+      "description": "Extracts angular-translate translation id’s and default text’s"
+    },
+    "angular-gettext-extract-loader": {
+      "description": "Extracts strings for translation into a nominated .pot file"
+    },
+    "gettext-loader": {
+      "description": "Compiles a Gettext PO file from code source"
+    },
+    "preprocessor-loader": {
+      "description": "The preprocessor-loader provides the ability to preprocess source files through user defined regular expressions, macros, and callback routines. All user defined logic can be applied to line scope or source scope"
+    },
+    "amdi18n-loader": {
+      "description": "I18n loader similar to require.js i18n plugin. The language packs support AMD/CommonJS module and can be written in .json / .js / .coffee files"
+    },
+    "sprockets-loader": {
+      "description": "Translate sprockets require directives into JavaScript module dependencies. Useful for migrating a Rails project to Webpack module bundling"
+    },
+    "properties-loader": {
+      "description": "Loader for .properties files"
+    },
+    "transifex-loader": {
+      "description": "Fetch imported translation files from transifex"
+    }
+  },
+  "support": {
+    "mocha-loader": {
+      "description": "Do tests with mocha in browser or node.js"
+    },
+    "coverjs-loader": {
+      "description": "PostLoader to code coverage with CoverJS"
+    },
+    "istanbul-instrumenter-loader": {
+      "description": "Istanbul postLoader to code coverage with karma-webpack and karma-coverage"
+    },
+    "isparta-instrumenter-loader": {
+      "description": "Isparta preLoader to code coverage with karma-webpack and douglasduteil/karma-coverage#next"
+    },
+    "ibrik-instrumenter-loader": {
+      "description": "Ibrik preLoader to CoffeeScript code coverage with karma-webpack and douglasduteil/karma-coverage"
+    },
+    "eslint-loader": {
+      "description": "PreLoader for linting code using ESLint"
+    },
+    "jshint-loader": {
+      "description": "PreLoader for linting code"
+    },
+    "jscs-loader": {
+      "description": "PreLoader for style checking"
+    },
+    "standard-loader": {
+      "description": "Conform to standard code style"
+    },
+    "inject-loader": {
+      "description": "A Webpack loader for injecting code into modules via their dependencies"
+    },
+    "injectable-loader": {
+      "description": "Allow to inject dependencies into modules"
+    },
+    "transform-loader": {
+      "description": "Use browserify transforms as loader"
+    },
+    "falafel-loader": {
+      "description": "Use falafel AST transforms as a loader."
+    },
+    "image-size-loader": {
+      "description": "Loads an image and returns its dimensions and type"
+    },
+    "csslint-loader": {
+      "description": "PreLoader for linting code using CSSLint"
+    },
+    "coffeelint-loader": {
+      "description": "PreLoader for linting CoffeeScript"
+    },
+    "tslint-loader": {
+      "description": "PreLoader for linting TypeScript using TSLint"
+    },
+    "parker-loader": {
+      "description": "Output a stylesheet analysis report using parker"
+    },
+    "sjsp-loader": {
+      "description": "Inject some codes for profiling using node-sjsp"
+    },
+    "amdcheck-loader": {
+      "description": "Uses AST to find and remove unused dependencies in AMD modules using amdextract"
+    },
+    "manifest-loader": {
+      "description": "A loader to generate JSON asset manifests to pass to preloading systems"
+    },
+    "gulp-rev-loader": {
+      "description": "Use in tandem with gulp-rev to replace assets from rev-manifest"
+    },
+    "html-test-loader": {
+      "description": "Test your html templates (for example) for analytics"
+    },
+    "stylelint-loader": {
+      "description": "Preloader for linting SASS and SCSS with style lint"
+    },
+    "stylefmt-loader": {
+      "description": "Preloader for fixing SASS/SCSS/PostCSS errors with style lint"
+    },
+    "scsslint-loader": {
+      "description": "PreLoader for linting Scss using scss-lint"
+    },
+    "htmlhint-loader": {
+      "description": "PreLoader for linting HTML using htmlhint-loader"
+    },
+    "documentation-loader": {
+      "description": "Javascript documentation with DocumentationJS"
+    },
+    "sassdoc-loader": {
+      "description": "Scss documentation with SassDoc"
+    },
+    "performance-loader": {
+      "description": "Profile module performance"
+    }
+  }
+}

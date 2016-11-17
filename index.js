@@ -1,0 +1,1 @@
+exports.webpackLoaders = require('./loaders.json');
