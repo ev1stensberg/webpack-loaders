@@ -2,7 +2,7 @@
 
 ##Usage
 
-´npm install -S webpack-loaders-json`
+`npm install -S webpack-loaders-json`
 
 ##Explanation
 
