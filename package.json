@@ -1,11 +1,11 @@
 {
   "name": "webpack-loaders-json",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JSON containing all webpack loaders",
   "main": "index.js",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/ev1stensberg/webpack-loaders"
+    "type": "git",
+    "url": "https://github.com/ev1stensberg/webpack-loaders"
   },
   "scripts": {
     "test": "echo \"No tests in thug valley!\""
